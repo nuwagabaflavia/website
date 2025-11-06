@@ -1,0 +1,353 @@
+ 
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ed 100%);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #4a6fa5 0%, #2c3e50 100%);
+    color: white;
+    padding: 30px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: block;
+    overflow: hidden;
+}
+
+.profile-section {
+    width: 30%;
+    float: left;
+    text-align: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #e67e22;
+    border-radius: 5px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.profile-img:hover {
+    transform: scale(1.03);
+}
+
+.img-caption {
+    font-style: italic;
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #ecf0f1;
+}
+
+.header-text {
+    width: 70%;
+    float: left;
+    padding-left: 30px;
+}
+
+.header-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    color: #ecf0f1;
+    font-weight: 300;
+}
+
+.main-nav ul {
+    list-style: none;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    padding: 8px 15px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 25, 0.1);
+}
+
+.main-nav a:hover {
+    color: #2c3e50;
+    background-color: #e67e22;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Titles */
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 2rem;
+    color: #2c3e50;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, #4a6fa5, #e67e22);
+    border-radius: 2px;
+}
+
+/* Schools Section */
+.schools-container {
+    display: block;
+    overflow: hidden;
+}
+
+.school-item {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    float: left;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.school-item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to bottom, #4a6fa5, #e67e22);
+}
+
+.school-item:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.year {
+    font-weight: bold;
+    color: #4a6fa5;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.school-name {
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+/* Work Experience Section */
+.experience-container {
+    display: block;
+}
+
+.experience-item {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.experience-item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to bottom, #e67e22, #4a6fa5);
+}
+
+.experience-item:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.job-title {
+    color: #2c3e50;
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+}
+
+.date {
+    color: #e67e22;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.company {
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #4a6fa5;
+    font-weight: 500;
+}
+
+.job-duties {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.job-duties li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 10px;
+}
+
+.job-duties li:before {
+    content: '▸';
+    color: #e67e22;
+    position: absolute;
+    left: -15px;
+}
+
+/* Hobbies Section */
+.hobbies-container {
+    display: block;
+    overflow: hidden;
+}
+
+.hobby-item {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    float: left;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.hobby-item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to bottom, #4a6fa5, #e67e22);
+}
+
+.hobby-item:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.hobby-title {
+    color: #2c3e50;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #e1e8ed;
+    padding-bottom: 8px;
+    font-size: 1.4rem;
+}
+
+.hobby-description {
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #2c3e50 0%, #4a6fa5 100%);
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 30px;
+}
+
+.footer-text {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+    .school-item {
+        width: 48%;
+        margin-right: 4%;
+        margin-bottom: 20px;
+    }
+    
+    .school-item:nth-child(2n) {
+        margin-right: 0;
+    }
+    
+    .hobby-item {
+        width: 48%;
+        margin-right: 4%;
+        margin-bottom: 20px;
+    }
+    
+    .hobby-item:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 900px) {
+    .school-item {
+        width: 31.33%;
+        margin-right: 3%;
+    }
+    
+    .school-item:nth-child(2n) {
+        margin-right: 3%;
+    }
+    
+    .school-item:nth-child(3n) {
+        margin-right: 0;
+    }
+    
+    .hobby-item {
+        width: 31.
